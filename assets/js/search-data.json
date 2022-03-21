@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "스터디 . 머신러닝 . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "스터디 . ’-‘ 머신러닝 . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://yoseung.github.io/yosung/about/",
           "relUrl": "/about/",
           "date": ""
