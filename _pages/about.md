@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 ## 스터디
-머신러닝
+'-' 머신러닝
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
