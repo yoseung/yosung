@@ -6,7 +6,7 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
+title: yosung
 description: An easy to use blogging platform with support for Jupyter Notebooks.
 github_username: yoseung
 # you can comment the below line out if your repo name is not different than your baseurl
@@ -39,11 +39,11 @@ baseurl: "/yosung" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    #twitter: fastdotai
+    github: yoseung
 
 # Set this to true to get LaTeX math equation support
-use_math: 
+use_math: True
 
 # Set this to true to display the summary of your blog post under your title on the Home page.
 show_description: true
