@@ -1,0 +1,3570 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Title | yosung</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://yoseung.github.io/yosung/2022/05/08/%EA%B0%95%ED%9A%A8%EC%8A%B9.html" />
+<meta property="og:url" content="https://yoseung.github.io/yosung/2022/05/08/%EA%B0%95%ED%9A%A8%EC%8A%B9.html" />
+<meta property="og:site_name" content="yosung" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-08T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-05-08T00:00:00-05:00","datePublished":"2022-05-08T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://yoseung.github.io/yosung/2022/05/08/%EA%B0%95%ED%9A%A8%EC%8A%B9.html"},"url":"https://yoseung.github.io/yosung/2022/05/08/%EA%B0%95%ED%9A%A8%EC%8A%B9.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/yosung/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://yoseung.github.io/yosung/feed.xml" title="yosung" /><link rel="shortcut icon" type="image/x-icon" href="/yosung/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/yosung/">yosung</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/yosung/about/">About Me</a><a class="page-link" href="/yosung/search/">Search</a><a class="page-link" href="/yosung/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-05-08T00:00:00-05:00" itemprop="datePublished">
+        May 8, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      32 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/yoseung/yosung/tree/master/_notebooks/0405 강효승.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/yosung/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/yoseung/yosung/master?filepath=_notebooks%2F0405+%EA%B0%95%ED%9A%A8%EC%8A%B9.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yosung/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/yoseung/yosung/blob/master/_notebooks/0405 강효승.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/yosung/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fyoseung%2Fyosung%2Fblob%2Fmaster%2F_notebooks%2F0405+%EA%B0%95%ED%9A%A8%EC%8A%B9.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/yosung/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/0405 강효승.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.-&#45936;&#51060;&#53552;&#51032;-&#51204;&#52376;&#47532;">5. &#45936;&#51060;&#53552;&#51032; &#51204;&#52376;&#47532;<a class="anchor-link" href="#5.-&#45936;&#51060;&#53552;&#51032;-&#51204;&#52376;&#47532;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>결손값(NaN, Null)을 변환해줘야 함.</li>
+<li>그러나 상황에 따라 피처값중 Null값이 얼마 없다면 피처값의 평균값으로 대체할 수 있지만 Null이 대부분이라면 해당 피처는 드랍하는게 낫다.</li>
+</ul>
+<p>+) 사이킷런의 머신러닝 알고리즘은 문자열을 입력값으로 허용하지 않아 숫자형으로 변환되야함. 문자열 피처에는 일반적으로 카테고리형과 텍스트형이 있음. 
+텍스트형은 피처 벡터화를 해주거나 불필요하다면 삭제하는게 좋음. 불필요 경우로는 주민번호나 단순 문자가 있는데 이런 식별자 피처는 데이터 로우를 식별하는 용도로 사용되어 예측에 중요한 요소가 아님. 그래서 알고리즘을 오히려 복잡하게 만들고 예측 성능을 저하시켜 삭제하는게 좋음</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#45936;&#51060;&#53552;-&#51064;&#53076;&#46377;">&#45936;&#51060;&#53552; &#51064;&#53076;&#46377;<a class="anchor-link" href="#&#45936;&#51060;&#53552;-&#51064;&#53076;&#46377;"> </a></h4><p>인코딩 방식에는 레이블 인코딩과 원핫 인코딩이 있음</p>
+<ul>
+<li><p>레이블 인코딩:</p>
+<ul>
+<li>문자열 값을 숫자영 카테고리 값으로 변환하는 방식. 예를들어 TV:1, 냉장고:2 주의할 점은 '01', '02'와 같은 코드 값 역시 문자열이므로 1, 2와 같은 숫자형 값으로 변환돼야 함. 위에서 말하듯 사이킷런의 머신러닝 알고리즘은 문자열을 값을 허용안해 숫자형으로 바꿔야함. </li>
+<li>사이킷런의 레이블 인코딩은 LabelEncoder 클래스로 구현함.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="n">items</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;TV&#39;</span><span class="p">,</span> <span class="s1">&#39;냉장고&#39;</span><span class="p">,</span> <span class="s1">&#39;전자레인지&#39;</span><span class="p">,</span> <span class="s1">&#39;컴퓨터&#39;</span><span class="p">,</span> <span class="s1">&#39;선풍기&#39;</span><span class="p">,</span> <span class="s1">&#39;선풍기&#39;</span><span class="p">,</span> <span class="s1">&#39;믹서&#39;</span><span class="p">,</span> <span class="s1">&#39;믹서&#39;</span><span class="p">]</span>
+
+<span class="c1">#LabelEncoder를 객체로 생성한 후, fit()과 transform()으로 레이블 인코딩 수행.</span>
+<span class="n">encoder</span><span class="o">=</span><span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+<span class="n">labels</span><span class="o">=</span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;인코딩 변환값:&#39;</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>인코딩 변환값: [0 1 4 5 3 3 2 2]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>+) 메서드 fit()의 역할이 많은데 우선 지도학습에서 특정 레이블을 예측하기 전에 데이를 학습시키기 위해 사용, 데이터 전처리 과정에서 사이킷런을 통해 데이터를 변환하는 대부분의 로직에서 fit은 transform과 함께 사용됨. fit()은 학습 데이터 세트에서 변환을 위한 기반을 설정하는 단계이고, transform()은 fit()에서 저장한 설정값들을 기반으로 데이터를 변환하는 메세드임.</p>
+<p>+) fit_transform()은 training data에만 사용되고 왜 transfrom은 test data에만 사용하는 됨. test data는 모델이 학습된 후에 평가할 때만 사용되어야 하는데 fit_transform을 test data에도 하게 된다면 모델의 성능을 평가할 수 없기 때문.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;인코딩 클래스&#39;</span><span class="p">,</span><span class="n">encoder</span><span class="o">.</span><span class="n">classes_</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>인코딩 클래스 [&#39;TV&#39; &#39;냉장고&#39; &#39;믹서&#39; &#39;선풍기&#39; &#39;전자레인지&#39; &#39;컴퓨터&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#질문: 가나다 순임?? </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;디코딩 원본값:&#39;</span><span class="p">,</span> <span class="n">encoder</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>디코딩 원본값: [&#39;전자레인지&#39; &#39;컴퓨터&#39; &#39;냉장고&#39; &#39;냉장고&#39; &#39;TV&#39; &#39;믹서&#39; &#39;선풍기&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>원핫 인코딩:</p>
+<ul>
+<li>나와있는 피처만큼 행 만들고 해당 행에서 고유값을 나타내는 칼럼에만 1, 나머지는 0을 표시. 기존의 행으로 구성되 있는것을 열형태로 변환해주는 것임. 칼럼이란게 레이블 종류임.</li>
+<li>숫자는 크고 작음에 대한 특성이 있어 레이블 인코딩시 몇몇 ml알고리즘에서 가중치가 더 부여되거나 더 중요하게 인식할 가능성으로 예측 성능이 떨어질수 있음. (트리 게열 ml알고리즘 제외:: 숫자의 특성 비교 안해서) 이러한 레이블 인코딩의 단점을 보완한게 원핫 코딩 </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">items</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;TV&#39;</span><span class="p">,</span> <span class="s1">&#39;냉장고&#39;</span><span class="p">,</span> <span class="s1">&#39;전자레인지&#39;</span><span class="p">,</span> <span class="s1">&#39;컴퓨터&#39;</span><span class="p">,</span> <span class="s1">&#39;선풍기&#39;</span><span class="p">,</span> <span class="s1">&#39;선풍기&#39;</span><span class="p">,</span> <span class="s1">&#39;믹서&#39;</span><span class="p">,</span> <span class="s1">&#39;믹서&#39;</span><span class="p">]</span>
+
+<span class="c1">#먼저 숫자 값으로 변환을 위해 LabelEncoder로 변환합니다.</span>
+<span class="n">encoder</span><span class="o">=</span><span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+<span class="n">labels</span><span class="o">=</span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+
+<span class="c1">#2차 데이터로 변환합니다.</span>
+<span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#원-핫 인코딩을 적용합니다.</span>
+<span class="n">oh_encoder</span><span class="o">=</span><span class="n">OneHotEncoder</span><span class="p">()</span>
+<span class="n">oh_encoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">oh_labels</span><span class="o">=</span><span class="n">oh_encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;원-핫 인코딩 데이터&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">oh_labels</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;원-핫 인코딩 데이터 차원&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">oh_labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1">#위의 결과를 통해 8개의 레코드와 1개의 칼럼을 가진 원본 데이터가 8개의 레코드와 6개의 칼럼으로 가진 데이터로 변환됨.</span>
+<span class="c1">#oh_labels이 sparse matrix이므로, 내용을 보기위해서 toarray() 메서드 사용</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>원-핫 인코딩 데이터
+[[1. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0.]]
+원-핫 인코딩 데이터 차원
+(8, 6)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">oh_labels</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;8x6 sparse matrix of type &#39;&lt;class &#39;numpy.float64&#39;&gt;&#39;
+	with 8 stored elements in Compressed Sparse Row format&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#인식할 가능성으로 예측 성능이 떨어질수 있다고 했는데 그럼, 원-핫 인코딩 전에 레이블 인코딩해도 성능이 떨어지는 것은 아닌지?</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;item&#39;</span><span class="p">:[</span><span class="s1">&#39;TV&#39;</span><span class="p">,</span> <span class="s1">&#39;냉장고&#39;</span><span class="p">,</span> <span class="s1">&#39;전자레인지&#39;</span><span class="p">,</span> <span class="s1">&#39;컴퓨터&#39;</span><span class="p">,</span> <span class="s1">&#39;선풍기&#39;</span><span class="p">,</span> <span class="s1">&#39;선풍기&#39;</span><span class="p">,</span> <span class="s1">&#39;믹서&#39;</span><span class="p">,</span> <span class="s1">&#39;믹서&#39;</span><span class="p">]})</span>
+<span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>item</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>TV</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>냉장고</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>전자레인지</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>컴퓨터</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>선풍기</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>선풍기</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>믹서</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>믹서</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>item_TV</th>
+      <th>item_냉장고</th>
+      <th>item_믹서</th>
+      <th>item_선풍기</th>
+      <th>item_전자레인지</th>
+      <th>item_컴퓨터</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#54588;&#52376;-&#49828;&#52992;&#51068;&#47553;&#44284;-&#51221;&#44508;&#54868;">&#54588;&#52376; &#49828;&#52992;&#51068;&#47553;&#44284; &#51221;&#44508;&#54868;<a class="anchor-link" href="#&#54588;&#52376;-&#49828;&#52992;&#51068;&#47553;&#44284;-&#51221;&#44508;&#54868;"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>서로 다른 변수의 값 범위를 일정한 수준으로 맞추는 작업을 피처 스케일링 이라고 한다. 대표적인 방법으로 표준화와 정규화가 있다. 표준화는 데이터의 피처 각각 평균이 0이고 분산이 1인 가우시안 정규분포를 가진 값으로 변환하는 것을 의미. 정규화는 서로 다른 피처의 크기를 통일하기 위해 크기를 변환해 주는 것임. 0~1사이의 값으로. 속도와 거리로 서로 다른 피처의 크기를 통일하기 위해 0~1 사이의 값으로 변환함. 참고로 아래의 xi_new는 모두 다른 의미임.</li>
+</ul>
+<p>[피처 스케일링]
+-일반적인 표준화: xi_new=(xi-mean(x))/stdev(x) 
+-정규화: xi_new=(xi-min(x))/(max(x)-min(x))</p>
+<p>[벡터 정규화]
+-사이킷런에서 선형대수의 정규화 (피처가 세개일때): xi_new=xi/((xi^2+yi^2+zi^2)^0.5)</p>
+<ul>
+<li>정규화가 저거 뜻하는거 맞겠지?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="StandardScaler">StandardScaler<a class="anchor-link" href="#StandardScaler"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>표준화를 쉽게 지원하기 위한 클래스임. 각각의 피처를 평균이 0이고 분산이 1인 값으로 변환해줌(가우시안 정규분포)</li>
+</ul>
+<p>+) 사이킷런에서 구현한 RBF 커널을 이용하는 서포트 벡트 머신이나 선형 회귀, 로지스틱 회귀는 데이터가 가우시안 분포를 가지고 있다고 가정하고 구현됬기에 사전에 표준화를 적용하는 것이 예측 성능 향상에 중요한 요소가 될수 있음.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1">#붓꽆 데이터 세트를 로딩하고 DataFrame으로 변환합니다.</span>
+<span class="n">iris</span><span class="o">=</span><span class="n">load_iris</span><span class="p">()</span>
+<span class="n">iris_data</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span>
+<span class="n">iris_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;feature 들의 평균 값&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris_df</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">feature 들의 분산 값&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris_df</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+
+<span class="c1">#var이 분산을 나타내는 약어</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>feature 들의 평균 값
+sepal length (cm)    5.843333
+sepal width (cm)     3.057333
+petal length (cm)    3.758000
+petal width (cm)     1.199333
+dtype: float64
+
+feature 들의 분산 값
+sepal length (cm)    0.685694
+sepal width (cm)     0.189979
+petal length (cm)    3.116278
+petal width (cm)     0.581006
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span> 
+
+<span class="c1">#StandardScaler객체 생성</span>
+<span class="n">scaler</span><span class="o">=</span><span class="n">StandardScaler</span><span class="p">()</span>
+<span class="c1">#StandardScaler로 데이터 세트 변환. fit()과 transform() 호출</span>
+<span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris_df</span><span class="p">)</span>
+<span class="n">iris_scaled</span><span class="o">=</span><span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">iris_df</span><span class="p">)</span>
+
+<span class="c1">#transform()시 스케일 변환된 데이터 세트가 Numpy ndarray 이므로 반환돼 이를 DataFrame으로 변환</span>
+<span class="n">iris_df_scaled</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris_scaled</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;feature 들의 평균 값&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris_df_scaled</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">feature 들의 분산 값&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris_df_scaled</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+
+<span class="c1">#아래 결과와 같이 모든 칼럼 값의 평균이 0에 아주 가까운 값, 분산은 1에 가까운 값으로 변환됨을 알 수 있다.</span>
+<span class="c1">#망충한 질문인데,, -1.690315e-15&lt;-얘가 0이랑 가가운거야?? 최소 -15아님?? 둘다 (-)부호잖어..?</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>feature 들의 평균 값
+sepal length (cm)   -1.690315e-15
+sepal width (cm)    -1.842970e-15
+petal length (cm)   -1.698641e-15
+petal width (cm)    -1.409243e-15
+dtype: float64
+
+feature 들의 분산 값
+sepal length (cm)    1.006711
+sepal width (cm)     1.006711
+petal length (cm)    1.006711
+petal width (cm)     1.006711
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="MinMaxScaler">MinMaxScaler<a class="anchor-link" href="#MinMaxScaler"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p>데이터값을 0과 1사이의 범위 값으로 변환함.(음수 값이 있으면 -1에서 1로 변환함)</p>
+</li>
+<li><p>질문이 데이터 분포가 가우시안 분포가 아닌경우 MinMaxScaler을 적용할수 있다는데, 가우시안 이면 평균이 1이니까 이부분을 충족 못시켜서 가우시안 일때 쓰면 안된다는 건가?</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+
+<span class="c1">#MinMaxScaler객체 생성</span>
+<span class="n">scaler</span><span class="o">=</span><span class="n">MinMaxScaler</span><span class="p">()</span>
+
+<span class="c1">#MinMaxScaler로 데이터 세트 변환, fit()과 transform() 호출</span>
+<span class="n">scaler</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris_df</span><span class="p">)</span>
+<span class="n">iris_scaled</span><span class="o">=</span><span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">iris_df</span><span class="p">)</span>
+
+<span class="c1">#transform()시 스케일 변환된 데이터 세트가 Numpy ndarray이므로 반환돼 이를 DataFrame으로 변환</span>
+<span class="n">iris_df_scaled</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris_scaled</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;feature 들의 최솟값&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris_df_scaled</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">feature 들의 최댓값&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris_df_scaled</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+
+<span class="c1">#모든 피처에서 0~1사이 값으로 변환되는 스케일링이 적용됬음을 알 수 있다.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>feature 들의 최솟값
+sepal length (cm)    0.0
+sepal width (cm)     0.0
+petal length (cm)    0.0
+petal width (cm)     0.0
+dtype: float64
+
+feature 들의 최댓값
+sepal length (cm)    1.0
+sepal width (cm)     1.0
+petal length (cm)    1.0
+petal width (cm)     1.0
+dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6.&#53440;&#51060;&#53440;&#45769;&#51004;&#47196;-&#49373;&#51316;&#51088;-&#50696;&#52769;&#54616;&#44592;">6.&#53440;&#51060;&#53440;&#45769;&#51004;&#47196; &#49373;&#51316;&#51088; &#50696;&#52769;&#54616;&#44592;<a class="anchor-link" href="#6.&#53440;&#51060;&#53440;&#45769;&#51004;&#47196;-&#49373;&#51316;&#51088;-&#50696;&#52769;&#54616;&#44592;"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install matplotlib
+<span class="o">!</span>pip install seaborn
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline 
+
+<span class="n">titanic_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./train.csv&#39;</span><span class="p">)</span>
+<span class="n">titanic_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">#Seaborn은 Matplotlib을 기반으로 다양한 색상 테마와 통계용 차트 등의 기능을 추가한 시각화 패키지</span>
+<span class="c1">#Matplotlib는 파이썬에서 데이터를 차트나 플롯(Plot)으로 그려주는 라이브러리 패키지</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Requirement already satisfied: matplotlib in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (3.5.1)
+Requirement already satisfied: numpy&gt;=1.17 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (1.21.5)
+Requirement already satisfied: pillow&gt;=6.2.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (9.0.1)
+Requirement already satisfied: cycler&gt;=0.10 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: python-dateutil&gt;=2.7 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (1.4.2)
+Requirement already satisfied: fonttools&gt;=4.22.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (4.31.2)
+Requirement already satisfied: packaging&gt;=20.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (21.3)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib) (3.0.7)
+Requirement already satisfied: six&gt;=1.5 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
+Requirement already satisfied: seaborn in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (0.11.2)
+Requirement already satisfied: matplotlib&gt;=2.2 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from seaborn) (3.5.1)
+Requirement already satisfied: scipy&gt;=1.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from seaborn) (1.7.3)
+Requirement already satisfied: pandas&gt;=0.23 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from seaborn) (1.4.1)
+Requirement already satisfied: numpy&gt;=1.15 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from seaborn) (1.21.5)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (1.4.2)
+Requirement already satisfied: pillow&gt;=6.2.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (9.0.1)
+Requirement already satisfied: python-dateutil&gt;=2.7 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (2.8.2)
+Requirement already satisfied: cycler&gt;=0.10 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (0.11.0)
+Requirement already satisfied: fonttools&gt;=4.22.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (4.31.2)
+Requirement already satisfied: packaging&gt;=20.0 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (21.3)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from matplotlib&gt;=2.2-&gt;seaborn) (3.0.7)
+Requirement already satisfied: pytz&gt;=2020.1 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from pandas&gt;=0.23-&gt;seaborn) (2021.3)
+Requirement already satisfied: six&gt;=1.5 in c:\users\hyo\anaconda3\envs\py39\lib\site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib&gt;=2.2-&gt;seaborn) (1.16.0)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>C85</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> ### 학습 데이터 정보 ### </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">titanic_df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+<span class="c1">#DataFrame의 info()메서드를 통해 각 전체 행 수, 컬럼에 대한 정보, 결측치 있는지 없는지, 데이터 타입, 메모리 사용량 등을 확인함.</span>
+<span class="c1">#RangeIndex는 DataFrame 인덱스의 범위를 나타내 전체 행의 개수를 알수 있음. </span>
+<span class="c1">#칼럼 수는 12개, 2개의 칼럼이 float64 타입, 5개의 칼럼이 object타입임. </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+ ### 학습 데이터 정보 ### 
+
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    object 
+ 4   Sex          891 non-null    object 
+ 5   Age          891 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    object 
+ 9   Fare         891 non-null    float64
+ 10  Cabin        891 non-null    object 
+ 11  Embarked     891 non-null    object 
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.7+ KB
+None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;데이터 세트 Null 값 개수&#39;</span><span class="p">,</span> <span class="n">titanic_df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>데이터 세트 Null 값 개수 0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; Sex 값 분포:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Cabin 값 분포:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Embarked 값 분포:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> Sex 값 분포:
+ male      577
+female    314
+Name: Sex, dtype: int64
+
+ Cabin 값 분포:
+ N              687
+C23 C25 C27      4
+G6               4
+B96 B98          4
+C22 C26          3
+              ... 
+E34              1
+C7               1
+C54              1
+E36              1
+C148             1
+Name: Cabin, Length: 148, dtype: int64
+
+ Embarked 값 분포:
+ S    644
+C    168
+Q     77
+N      2
+Name: Embarked, dtype: int64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0    N
+1    C
+2    N
+Name: Cabin, dtype: object
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Survived&#39;</span><span class="p">])[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="c1">#survived 0은 사망, 1은 생존이다.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Sex     Survived
+female  0            81
+        1           233
+male    0           468
+        1           109
+Name: Survived, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;AxesSubplot:xlabel=&#39;Pclass&#39;, ylabel=&#39;Survived&#39;&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#입력 age에 따라 구분 값을 반환하는 함수&#39;get_category&#39;를 def로 설정해줌. </span>
+<span class="c1">#age에 어떤 값을 넣어줄진 모르지만 &lt;=-1이면 Unknown값 나오게 하는 함수 &#39;get_category&#39; def를 통해 정의함.</span>
+<span class="k">def</span> <span class="nf">get_category</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
+    <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;&#39;</span> <span class="c1"># 구분 카테고리를 담을 빈 str 생성</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;=-</span><span class="mi">1</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Unknown&#39;</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span><span class="mi">5</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Baby&#39;</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span><span class="mi">12</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Child&#39;</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span><span class="mi">18</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Teenager&#39;</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span><span class="mi">25</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Student&#39;</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span><span class="mi">35</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Young Adult&#39;</span>
+    <span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;=</span><span class="mi">60</span><span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Adult&#39;</span>
+    <span class="k">else</span> <span class="p">:</span> <span class="n">cat</span><span class="o">=</span><span class="s1">&#39;Elderly&#39;</span>
+    
+    <span class="k">return</span> <span class="n">cat</span>
+    
+<span class="c1">#막대그래프의 크기 figure를 더 크게 설정</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+<span class="c1">#X축의 값을 순차적으로 표시하기 위한 설정</span>
+<span class="n">group_names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Unkown&#39;</span><span class="p">,</span><span class="s1">&#39;Baby&#39;</span><span class="p">,</span><span class="s1">&#39;Child&#39;</span><span class="p">,</span><span class="s1">&#39;Teenager&#39;</span><span class="p">,</span><span class="s1">&#39;Student&#39;</span><span class="p">,</span><span class="s1">&#39;Young Adult&#39;</span><span class="p">,</span><span class="s1">&#39;Adult&#39;</span><span class="p">,</span><span class="s1">&#39;Elderly&#39;</span><span class="p">]</span>
+
+
+<span class="c1">#lambda가 함수 get_category(x)를 적용해준다는 거임.</span>
+<span class="c1">#titanic_df의 칼럼 &#39;Age&#39; 값을 get_category(x)의 x에 넣어주고 이에 반환값을 titanic_df의 칼럼 &#39;Age_cat&#39;에 따른 피처값으로 넣어줌.</span>
+<span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">get_category</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span><span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">group_names</span><span class="p">)</span>
+
+<span class="c1">#그래프에서 나이별 분류, 즉 Age_cat의 칼럼을 그려주기 위해 추가 한거니까 그래프 그리고, 다시 해당 칼럼을 삭제해줌. </span>
+<span class="n">titanic_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Age_cat&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+
+<span class="c1">#위의 과정은 그래프에 그리기 위해 데이터 프레임에 칼럼 추가하고/ 그래프 그리고/ 다시 삭제하는 과정임.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+
+<span class="c1">#함수 encode_features 를/ dataDF에 들어갈/ 임의의 데이터 프레임의 어떤 칼럼(features)을 레이블 인코딩하도록/ 설정함.</span>
+<span class="k">def</span> <span class="nf">encode_features</span><span class="p">(</span><span class="n">dataDF</span><span class="p">):</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Embarked&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+        <span class="n">le</span><span class="o">=</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">LabelEncoder</span><span class="p">()</span>
+        <span class="n">le</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">dataDF</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+        <span class="n">dataDF</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">dataDF</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">dataDF</span>
+
+<span class="n">titanic_df</span><span class="o">=</span><span class="n">encode_features</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">)</span>
+<span class="n">titanic_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="c1">#&#39;Cabin&#39;, &#39;Sex&#39;, &#39;Embarked&#39; 속성이 숫자형으로 바뀐것을 알 수 있음.</span>
+<span class="c1"># 참고로 위위위위에서 titanic_df[&#39;Cabin&#39;]=titanic_df[&#39;Cabin&#39;].str[:1] 해서 선실 앞자리 별로 레이블 인코딩 됨.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>1</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>0</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>0</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td>0</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>53.1000</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Allen, Mr. William Henry</td>
+      <td>1</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>8.0500</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#(임의의 df를 설정하여 함수를 만든거임.)</span>
+
+<span class="c1">#Null 처리 함수</span>
+<span class="k">def</span> <span class="nf">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Fare&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">#머신러닝 알고리즘에 불필요한 속성 제거</span>
+<span class="k">def</span> <span class="nf">drop_features</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;PassengerId&#39;</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Ticket&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">#레이블 인코딩 수행</span>
+<span class="k">def</span> <span class="nf">format_features</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Embarked&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+        <span class="n">le</span><span class="o">=</span><span class="n">LabelEncoder</span><span class="p">()</span>
+        <span class="n">le</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">#앞에서 설정한 데이터 전처리 함수 호출( 위에 나온 3개를 모두 수행하는 함수)</span>
+<span class="k">def</span> <span class="nf">transform_features</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">drop_features</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">format_features</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">### 위 세 함수 모두 마지막에 return df를 입력해주었는데</span>
+<span class="c1">### 그렇게 함으로써 아래에서 df=df, df=df, df=df 를 통해 df를 함수를 이용한 결과로 업데이트 해줄 수 있다.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./train.csv&#39;</span><span class="p">)</span>
+<span class="n">y_titanic_df</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span> <span class="c1">#생존값을 y에 넣어줌(들어가는 값은 0,1)</span>
+<span class="n">X_titanic_df</span><span class="o">=</span><span class="n">titanic_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#y에 넣줬으니까 X에는 빼줌)</span>
+
+<span class="n">X_titanic_df</span><span class="o">=</span><span class="n">transform_features</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">)</span> <span class="c1">#X에서 전처리 해줌</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">,</span> <span class="n">y_titanic_df</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="c1">#결정트리, Random Forest, 로지스틱 회귀를 이한 사이킷런 Classifier 클래스 생성</span>
+<span class="n">dt_clf</span><span class="o">=</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">rf_clf</span><span class="o">=</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">lr_clf</span><span class="o">=</span><span class="n">LogisticRegression</span><span class="p">()</span>
+
+<span class="c1">#DecisionTreeClassifier 학습/예측/평가</span>
+<span class="n">dt_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">dt_pred</span><span class="o">=</span><span class="n">dt_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;DecisionTreeClassifier 정확도:</span><span class="si">{0:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dt_pred</span><span class="p">)))</span>
+
+<span class="c1"># RandomForestClassifier 학습/예측/평가</span>
+<span class="n">rf_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">rf_pred</span><span class="o">=</span><span class="n">rf_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;RandomForestClassifier 정확도:</span><span class="si">{0:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">rf_pred</span><span class="p">)))</span>
+
+<span class="c1"># LogisticRegression 학습/예측/평가 ###이산적인 데이터인데 회귀로 예측할 수도 있음. 꼭 연속적인 것만 해야 하는건 아님</span>
+<span class="n">lr_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">lr_pred</span><span class="o">=</span><span class="n">lr_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;LogisticRegression 정확도:</span><span class="si">{0:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">lr_pred</span><span class="p">)))</span>
+
+<span class="c1">#LogisticRegression의 정확도가 가장 높게 나왔지만 아직 최적화 작업을 수행하지 않았고, </span>
+<span class="c1">#데이터 양도 충분하지 않기에 어떤 알고리즘이 가장 좋다고 말할순 없음.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>DecisionTreeClassifier 정확도:0.7877
+RandomForestClassifier 정확도:0.8547
+LogisticRegression 정확도:0.8492
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\hyo\anaconda3\envs\py39\lib\site-packages\sklearn\linear_model\_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">KFold</span>
+
+<span class="k">def</span> <span class="nf">exec_kfold</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">folds</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+    <span class="c1">#폴드 세트를 5개인 KFold객체를 생성, 폴드 수만큼 예측결과 저장을 위한 리스트 객체 생성.</span>
+    <span class="n">kfold</span><span class="o">=</span><span class="n">KFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="n">folds</span><span class="p">)</span>
+    <span class="n">scores</span><span class="o">=</span><span class="p">[]</span>
+    
+    <span class="c1">#KFold 교차 검증 수행.</span>
+    <span class="c1">#enumerate란 리스트나 튜플같이 하나씩 불러올때 해당 원소가 몇번째인지 알려주는 거임.</span>
+    <span class="k">for</span> <span class="n">iter_count</span><span class="p">,</span> <span class="p">(</span><span class="n">train_index</span><span class="p">,</span> <span class="n">test_index</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">kfold</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">)):</span>
+        <span class="c1">#X_train_df 데이터에서 교차 검증별로 학습과 검증 데이터를 가리키는 index 생성</span>
+        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="o">=</span><span class="n">X_titanic_df</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">train_index</span><span class="p">],</span> <span class="n">X_titanic_df</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+        <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="n">y_titanic_df</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">train_index</span><span class="p">],</span> <span class="n">y_titanic_df</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">test_index</span><span class="p">]</span>
+        <span class="c1">#Classifier 학습, 예측, 정확도 계산</span>
+        <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+        <span class="n">predictions</span><span class="o">=</span><span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+        <span class="n">accuracy</span><span class="o">=</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
+        <span class="n">scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;교차 검증 </span><span class="si">{0}</span><span class="s2"> 정확도: </span><span class="si">{1:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">iter_count</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">))</span>
+        
+    <span class="c1">#5개 fold에서의 평균 정확도 계산</span>
+    <span class="n">mean_score</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;평균 정확도: </span><span class="si">{0:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mean_score</span><span class="p">))</span>
+<span class="c1">#exec_kfold 호출</span>
+<span class="n">exec_kfold</span><span class="p">(</span><span class="n">dt_clf</span><span class="p">,</span> <span class="n">folds</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> 
+
+<span class="c1">#질문이 왜 학습 k폴드로 나눠줄때 y_titanic_df은 빼고 해주는 거임???</span>
+<span class="c1">#-어 왜냐면 그건 straified kfold에서만 해주는 거라서. kfold에선 안해줘도 됨.</span>
+<span class="c1">#질문이 iter_count=0안해도 1,2,3,4,5나오는 이유</span>
+<span class="c1">#-그건 enumerate해줬기 때문, 기본이 0부터 시작이고 star=값 설정해주면 그에 따라 시작이 달라질수 있음.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>교차 검증 0 정확도: 0.7542
+교차 검증 1 정확도: 0.7809
+교차 검증 2 정확도: 0.7865
+교차 검증 3 정확도: 0.7697
+교차 검증 4 정확도: 0.8202
+평균 정확도: 0.7823
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_titanic_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>1</td>
+      <td>22.000000</td>
+      <td>1</td>
+      <td>0</td>
+      <td>7.2500</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0</td>
+      <td>38.000000</td>
+      <td>1</td>
+      <td>0</td>
+      <td>71.2833</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>0</td>
+      <td>26.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.9250</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>0</td>
+      <td>35.000000</td>
+      <td>1</td>
+      <td>0</td>
+      <td>53.1000</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3</td>
+      <td>1</td>
+      <td>35.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8.0500</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>886</th>
+      <td>2</td>
+      <td>1</td>
+      <td>27.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13.0000</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>887</th>
+      <td>1</td>
+      <td>0</td>
+      <td>19.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.0000</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>888</th>
+      <td>3</td>
+      <td>0</td>
+      <td>29.699118</td>
+      <td>1</td>
+      <td>2</td>
+      <td>23.4500</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>889</th>
+      <td>1</td>
+      <td>1</td>
+      <td>26.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.0000</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>890</th>
+      <td>3</td>
+      <td>1</td>
+      <td>32.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.7500</td>
+      <td>7</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+<p>891 rows × 8 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_titanic_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0      0
+1      1
+2      1
+3      1
+4      0
+      ..
+886    0
+887    1
+888    0
+889    1
+890    0
+Name: Survived, Length: 891, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_index</span>
+
+<span class="c1">#train_index가 정의되지 않는 이유는 def로 함수를 설정했고, 그 안에 있기 때문. </span>
+<span class="c1"># 함수 안에서 정의한거면 쓸수 없음- 이런걸 지역변수라고 함.</span>
+<span class="c1">#함수밖에 for문으로 돌린거면 train_index의 값이 나옴- 이런걸 전역변수라 함.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Input <span class="ansi-green-intense-fg ansi-bold">In [93]</span>, in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">train_index</span>
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;train_index&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>지역변수와 전역변수</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">4</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">function</span><span class="p">():</span>
+    <span class="n">a</span><span class="o">=</span><span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span>
+<span class="c1">#맨 위에서 a=4를 안써줬으면 에러나왔을거임. 함수안에서 정의된 a는 지역변수라 나올수 없어서.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>4</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+
+<span class="n">scores</span><span class="o">=</span><span class="n">cross_val_score</span><span class="p">(</span><span class="n">dt_clf</span><span class="p">,</span> <span class="n">X_titanic_df</span><span class="p">,</span> <span class="n">y_titanic_df</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">iter_count</span><span class="p">,</span> <span class="n">accuracy</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">scores</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;교차 검증 </span><span class="si">{0}</span><span class="s2"> 정확도: </span><span class="si">{1:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">iter_count</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">))</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;평균 정확도: </span><span class="si">{0:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>교차 검증 0 정확도: 0.7430
+교차 검증 1 정확도: 0.7753
+교차 검증 2 정확도: 0.7921
+교차 검증 3 정확도: 0.7865
+교차 검증 4 정확도: 0.8427
+평균 정확도: 0.7879
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+
+<span class="n">parameters</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;max_depth&#39;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
+            <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]}</span>
+<span class="n">grid_dclf</span><span class="o">=</span><span class="n">GridSearchCV</span><span class="p">(</span><span class="n">dt_clf</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">grid_dclf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GridSearchCV 최적 하이퍼 파라미터:&#39;</span><span class="p">,</span> <span class="n">grid_dclf</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;GridSearchCV 최고 정확도: </span><span class="si">{0:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">grid_dclf</span><span class="o">.</span><span class="n">best_score_</span><span class="p">))</span>
+<span class="n">best_dclf</span><span class="o">=</span><span class="n">grid_dclf</span><span class="o">.</span><span class="n">best_estimator_</span>
+
+<span class="c1">#GridSearchCV의 최적 하이퍼 파라미터로 학습된 Estimator로 예측 및 평가 수행.</span>
+<span class="n">dpredictions</span><span class="o">=</span><span class="n">best_dclf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">accuracy</span><span class="o">=</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dpredictions</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;테스트 세트에서의 DecisionTreeClassifier 정확도: </span><span class="si">{0:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy</span><span class="p">))</span>
+
+<span class="c1">#하이퍼 파라미터 변경 전보다 약 0.08이상 증가</span>
+<span class="c1">#테스트용 데이터 세트가 작기 때문에 수치상으로 예측 성능이 많이 증가한 것 처럼 보임.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>GridSearchCV 최적 하이퍼 파라미터: {&#39;max_depth&#39;: 3, &#39;min_samples_leaf&#39;: 5, &#39;min_samples_split&#39;: 2}
+GridSearchCV 최고 정확도: 0.7992
+테스트 세트에서의 DecisionTreeClassifier 정확도: 0.8715
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#54217;&#44032;">&#54217;&#44032;<a class="anchor-link" href="#&#54217;&#44032;"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>머신러닝은 데이터 가공/변환, 모델 학습/예측, 긜고 평가의 과정으로 구성됩니다. 성능 평가 지표는 일반적으로 모델이 분류냐 회귀냐에 따라 여러 종류로 나뉩니다. <ul>
+<li>회귀의 경우 대부분 실제 값과 예측값의 오차 평균값에 기반합니다(기본적으로 예측 오차를 가지고 정규화 수준을 재가공 하는 방법). </li>
+<li>분류의 평가 방법은 정확도만 가지고 판단했다가는 잘못된 평가 결과에 빠질 수 있음. 특히 이진 분류에서는 정확도보다는 다른 성능 평가 지표가 더 중시됨.<ul>
+<li>분류의 성능 평가 지표: 정확도, 오차행렬, 정밀도, 재한율, F1 스코오, ROC AUC </li>
+<li>분류는 결정 클래스 값 종류 유형에 따라 2개의 결과값만 가지는 이진 분류와 여러개의 결정 클래스 값을 가지는 멀티 분류로 나뉨. 특히 이진 분류에서 성능 평가 지표가 중요함.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#51221;&#54869;&#46020;">&#51221;&#54869;&#46020;<a class="anchor-link" href="#&#51221;&#54869;&#46020;"> </a></h3><ul>
+<li>정확도: 예측 결과가 동일한 데이터 건수/전체 예측 데이터 건수</li>
+<li>정확도는 직관적으로 모델 예측 성능을 나타내는 지표이지만 이진 분류의 경우 데이터의 구성에 따라 ml모델의 성능을 왜곡할 수 있음. 그래서 정확도 말고 다른 성능 지표들이 필요함.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#51060;&#51652;&#48516;&#47448;&#50640;&#49436;-&#51221;&#54869;&#46020;-&#51648;&#54364;&#44032;-&#50612;&#46523;&#44172;-ml&#47784;&#45944;&#51032;-&#49457;&#45733;&#51012;-&#50780;&#44257;&#54624;&#44620;">&#51060;&#51652;&#48516;&#47448;&#50640;&#49436; &#51221;&#54869;&#46020; &#51648;&#54364;&#44032; &#50612;&#46523;&#44172; ml&#47784;&#45944;&#51032; &#49457;&#45733;&#51012; &#50780;&#44257;&#54624;&#44620;<a class="anchor-link" href="#&#51060;&#51652;&#48516;&#47448;&#50640;&#49436;-&#51221;&#54869;&#46020;-&#51648;&#54364;&#44032;-&#50612;&#46523;&#44172;-ml&#47784;&#45944;&#51032;-&#49457;&#45733;&#51012;-&#50780;&#44257;&#54624;&#44620;"> </a></h4><ul>
+<li>타이타닉의 예측 결과에서 여자의 생존률이 남자보다 높게 나오는데 전체 요소를 배제하고 성별만으로 예측해도 이와 비슷한  성능 결과가 나옴-&gt;단순 이진분류인 성별로 예측도의 정확성을 높임</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>DummyClassifier란 피처값을 무시하고 더 간단하게 비교 할수 있게 해주는 거임. The specific behavior of the baseline is selected with the strategy parameter.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#얘로 지금 예측하겠다는게 아니라 이런 일을 수행하는 함수를 만들어 준것일 뿐</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">BaseEstimator</span>
+
+<span class="k">class</span> <span class="nc">MyDummyClassifier</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">):</span>
+    <span class="c1"># fit()메서드는 아무것도 학습하지 않음.</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">pass</span>
+    <span class="c1">#predict()메서드는 단순히 피처가 1이면 0, 아니면 1로 예측</span>
+    <span class="k">def</span> <span class="nf">predict</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">pred</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span> <span class="c1">#zeros 함수는 0으로 채워진 배열을 만듦( X의 행수 만큼 행, 열은 1개),</span>
+                                        <span class="c1">#pred를 업더이트 시켜주기 위해 임의로 값 채워놓은것 뿐</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="k">if</span> <span class="n">X</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+                <span class="n">pred</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">pred</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+            
+        <span class="k">return</span> <span class="n">pred</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
+
+<span class="k">def</span> <span class="nf">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Embarked&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Fare&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">#머신러닝 알고리즘에 불필요한 속성 제거</span>
+<span class="k">def</span> <span class="nf">drop_features</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;PassengerId&#39;</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Ticket&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">#레이블 인코딩 수행</span>
+<span class="k">def</span> <span class="nf">format_features</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;Embarked&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+        <span class="n">le</span><span class="o">=</span><span class="n">LabelEncoder</span><span class="p">()</span>
+        <span class="n">le</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">feature</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">df</span>
+
+<span class="c1">#앞에서 설정한 데이터 전처리 함수 호출( 위에 나온 3개를 모두 수행하는 함수)</span>
+<span class="k">def</span> <span class="nf">transform_features</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">drop_features</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">format_features</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="n">titanic_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./train.csv&#39;</span><span class="p">)</span> <span class="c1">#원본 데이터를 재로딩</span>
+<span class="n">y_titanic_df</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span> <span class="c1">#데이터 가공</span>
+<span class="n">X_titanic_df</span><span class="o">=</span><span class="n">titanic_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">X_titanic_df</span><span class="o">=</span><span class="n">transform_features</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">)</span> <span class="c1">#데이터 전처리</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">,</span> <span class="n">y_titanic_df</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#학습 데이터/테스트 데이터 분할</span>
+
+<span class="c1">#위에서 생성한 Dummy Classifier를 이용해 학습/에측/평가 수행</span>
+<span class="n">myclf</span><span class="o">=</span><span class="n">MyDummyClassifier</span><span class="p">()</span>
+<span class="n">myclf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">mypredictions</span><span class="o">=</span><span class="n">myclf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dummy Classifier의 정확도: </span><span class="si">{0:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">mypredictions</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dummy Classifier의 정확도: 0.7877
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>#MNIST 데이터 세트를 변환해 불균형한 데이터 세트로 만든 후 정확도 지표 적용시 어떤 문제점이 있는지 알아보자</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_digits</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">BaseEstimator</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1">#Dummy Classifier를 생성하기</span>
+<span class="k">class</span> <span class="nc">MyFakeClassifier</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span> <span class="c1">#얘는 그냥 X,y를 받을수 있다는 의미..? 밑에 pass쓴거는 함수만 쓰면 컴파일 돌렷을 때 오류날수 있어서 쓴거.</span>
+        <span class="k">pass</span>
+    
+    <span class="c1">#입력값으로 들어오는 X 데이터 세트의 크기만큼 모두 0값으로 만들어서 반환, 위의 X와 같은거 넣으란거 아님</span>
+    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="mi">1</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span> <span class="c1"># bool은 (True or False)을 바이트 형식으로 저장해 놓은것</span>
+    
+<span class="c1">#불균형한 데이터와 세트 만들기 </span>
+<span class="c1">#사이킷런의 내장 데이터 세트인 load_digits()를 이용해 MNIST 데이터 로딩, digits이 모든 문자열을 숫자열로 바꿔주는 것으 의미함.</span>
+<span class="n">digits</span><span class="o">=</span><span class="n">load_digits</span><span class="p">()</span>
+
+<span class="c1">#digits 번호가 7번이면 True이고 이를 astype(int)로 1로 변환, 7번이 아니면 false이고 0으로 변환</span>
+<span class="n">y</span><span class="o">=</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">target</span><span class="o">==</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">digits</span><span class="o">.</span><span class="n">data</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.,  0.,  5., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ..., 10.,  0.,  0.],
+       [ 0.,  0.,  0., ..., 16.,  9.,  0.],
+       ...,
+       [ 0.,  0.,  1., ...,  6.,  0.,  0.],
+       [ 0.,  0.,  2., ..., 12.,  0.,  0.],
+       [ 0.,  0., 10., ..., 12.,  1.,  0.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">digits</span><span class="o">.</span><span class="n">target</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0, 1, 2, ..., 8, 9, 8])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_test</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.,  0.,  7., ...,  3.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  6., ...,  0.,  0.,  0.],
+       ...,
+       [ 0.,  1., 13., ..., 15.,  3.,  0.],
+       [ 0.,  0.,  0., ...,  1.,  0.,  0.],
+       [ 0.,  0.,  0., ..., 12.,  0.,  0.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1,
+       0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0,
+       1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1,
+       1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0,
+       0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0,
+       1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#불균형한 레이블 분포도 확인</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;레이블 테스트 세트 크기:&#39;</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1">#[].shape이 (몇행,몇열) 인지 나옴</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;테스트 세트 레이블 0과 1의 분포도&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+
+<span class="c1">#Dummy Classifier로 학습/예측/정확도 평가</span>
+<span class="n">fakeclf</span><span class="o">=</span><span class="n">MyFakeClassifier</span><span class="p">()</span>
+<span class="n">fakeclf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1"># &lt;-얜 걍 형식상 해주는건데 딱히 의미 없음</span>
+<span class="n">fakepred</span><span class="o">=</span><span class="n">fakeclf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;모든 예측을 0으로 하여도 정확도는: </span><span class="si">{:.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">fakepred</span><span class="p">)))</span>
+
+<span class="c1">#모든 것을 0으로 예측하는 MyFakeClassifier의 정확도가 너무 높게 나옴.</span>
+<span class="c1">#그래서 밑에서 True/False, Positivw/Negative로 4분면으로 구성되는 오차행렬에 대해 배워보자.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>레이블 테스트 세트 크기: (450,)
+테스트 세트 레이블 0과 1의 분포도
+0    405
+1     45
+dtype: int64
+모든 예측을 0으로 하여도 정확도는: 0.900
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_train</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([0, 0, 1, ..., 0, 0, 0])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.,  0.,  3., ..., 12., 14.,  7.],
+       [ 0.,  1.,  9., ..., 10.,  1.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       ...,
+       [ 0.,  0.,  1., ..., 16., 13.,  1.],
+       [ 0.,  1., 11., ..., 13., 16.,  5.],
+       [ 0.,  0.,  6., ...,  6.,  0.,  0.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_test</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.,  0.,  7., ...,  3.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  6., ...,  0.,  0.,  0.],
+       ...,
+       [ 0.,  1., 13., ..., 15.,  3.,  0.],
+       [ 0.,  0.,  0., ...,  1.,  0.,  0.],
+       [ 0.,  0.,  0., ..., 12.,  0.,  0.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>인스턴스란 특정한 값 없이 이런 기능을 한다는 코드를 이런 기능 쓰기 위해 매개변수 넣어 주는 것을 말함. 클래스를 객체화한거라고 보면됨. 클래스란 비슷한 기능을 하는 함수를 모아놓은 느낌..?임. 예를 들어 클래스가 계산기라고 하면 그 안의 덧셈, 뺄셈 등의 기능을 모아놓은거임. </li>
+<li>self 란게 객체의 인스턴스 그 자체를 말한다. 즉, 객체 자기 자신을 참조하는 매개변수인 셈임</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="03-&#54217;&#44032;">03 &#54217;&#44032;<a class="anchor-link" href="#03-&#54217;&#44032;"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#50724;&#52264;&#54665;&#47148;">&#50724;&#52264;&#54665;&#47148;<a class="anchor-link" href="#&#50724;&#52264;&#54665;&#47148;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>[[TN ////    FP 
+<pre><code> FN ////TP]]</code></pre>
+</li>
+<li>이진 분류에서 성능 지표로 잘 활용됨</li>
+<li>이진 분류의 예측 오류가 얼마인지와 더불어// 어떠한 유형의 예측 오류가 발생하고 있는지를 함께 나타내주는 지표.</li>
+<li>4분면 행렬에서 실제 레이블 클래스 값과 예측 레이블 클래스 값이 어떠한 유형을 가지고 매칭되는 지를 나타냄.<ul>
+<li>앞 문자 True/False는 예측값과 실제값이 '같은가/다른가'를 의미하고 뒤문자 Positive/Negative 는 예측 결과 값이 부정(0)/긍정(1)을 의미함.</li>
+<li>ex) TN은 True Negative라는 의미이며 앞 True는 예측 클래스값과 실제 클래스 값이 같다는 의미이고, 뒤의 Negative는 예측값이 Negative라는 의미이다. 즉 예측을 Negative(0)으로 예측했는데, 실제 값도 Negative(0)이라는 의미이다. </li>
+<li>TN, FP, FN, TP로 나오는 값을 조합하여 정확도, 정밀도, 재현율 값을 알 수 있음.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#MyFakeClassifier의 예측결과인 fakepred와 실제 결과인 y_test를  </span>
+<span class="c1">#confusion_matrix()의 인자로 입력헤 오차행렬을 confusion_matrix()를 이용해 배열 형태로 출력</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+
+<span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">fakepred</span><span class="p">)</span> <span class="c1">###질문이 아니 y_test는 왜 안에 같이 써주는 거임?</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[405,   0],
+       [ 45,   0]], dtype=int64)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TN 자리인 405의 의미는 0이라 에측했는데 0나온게 405개</span>
+<span class="c1">#FP 자리인 0의 의미는 0이라 예측했는데 1나온게 0개 ---&gt; 그럴수 밖에 없는게 fakepred에서 0만 나오게 했으니까 1이 나올수 없음</span>
+<span class="c1">#FN 자리인 45의 의미는 1이라 예측했는데 0나온게 45개</span>
+<span class="c1">#TP 자리인 0의 의미는 1이라고 예측했는데 1나온게 0개---&gt; 얘도 이럴수 밖에 없는게 0만 나오게 설정해서 그럼 위위 말처럼</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#FP: array[0,1] - 음성(0)이라 예측했는데, 양성(1)이 나옴</span>
+<span class="c1">#FN: array[1,0] - 양성(1)이라 예측했는데, 음성(0)이 나옴</span>
+<span class="c1">#TP: array[1,1] - 양성(0)이라 예측했는데, 양성(0)이 나옴</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#51221;&#54869;&#46020;">&#51221;&#54869;&#46020;<a class="anchor-link" href="#&#51221;&#54869;&#46020;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>정확도는 예측값과 실제 값이 얼마나 동일한가에 대한 비율만으로 결정된다. 즉 오차행렬에서 True에 해당하는 값인 TN과 TP에 좌우된다. 정확도는 오차 행렬상에서 다음과 같이 정의될 수 있다. </li>
+<li>정확도=예측 결과와 실제 값이 동일한 건수/ 전체 데이터 수 =(TN+TP)/(TN+FP+FN+TP)</li>
+<li>일반적으로 불균형한 레이블 클래스를 가지는 이진 분류 모델에서는 많은 데이터 중에서 찾고자 하는 매우 적은 수의 결괏값에 Positive를 설정해 1값을 부여하고, 그렇지 않은 경우는 Negative로 0값을 부여하는 경우가 많다.(암:1, 건강:0)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>불균형한 데이터 세트에서 정확도만으로는 성능이 떨어지는 이유:<ul>
+<li>불균형한 이진 분류 데이터 세트에서 Positive 데이터 건수가 매우 작기에 데이터에 기반한 ML알고리즘은 Positve 보다 Negative로 예측할 경향이 더 강해져 TN은 커지고 TP는 작아지게 된다. 또한 Negative로 예측할 때 정확도가 높아지기 때문에 FN이 매우 작고, Positive로 예측하는 경우가 작기에 FP역시 작아지게 된다. </li>
+<li>결과적으로 정확도 지표는 비대칭한 데이터 세트에서 Positive에 대한 예측 정확도를 판단하지 못한 채 Negative에 대한 예측 정확도만으로 분류의 정확도가 매우 높게 나타나는 수치적 판단 오류를 일으킴.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#51221;&#48128;&#46020;&#50752;-&#51116;&#54788;&#50984;">&#51221;&#48128;&#46020;&#50752; &#51116;&#54788;&#50984;<a class="anchor-link" href="#&#51221;&#48128;&#46020;&#50752;-&#51116;&#54788;&#50984;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>정밀도와 재현율은 Positive 데이터 세트의 예측 성능에 좀 더 초첨을 맞춘 평가 지표이다. 앞서 만든 MyClassifier는 Positive(1)으로 예측한 TP값이 없기에 정밀도와 재현율 값이 모두 0이다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>정밀도= TP/(FP+TP) :: Positive로 예측한 대상 중에 예측값과 실제 값이 Positive로 일치한 데이터 건수 (비율)<ul>
+<li>Positive 예측 성능을 더욱 정밀하게 측정하기 위한 평가 지표로 양성 예측이라고도 함</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>재현율= TP/(FN+TP) :: 실제 값이 Positive인 대상 중 예측값과 실제 값이 Positive로 일치한 데이터 건수 (비율)<ul>
+<li>민감도 또는 TPR이라고도 함.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>재현율과 정밀도는 이진분류를 하는 상황에 따라 둘중 무엇이 더 중요하다고 간주될 수 있음. 보통 적게 나오는 것을 양성(1)으로 설정하여 요주인물로 보고 흔히 나오는 것을 음성(0)이라 다룸. 양성을 음성이라 했을때 큰일 나는 상황에는 재현율, 음성을 양성이라 했을때 큰일나는 상황엔 정밀도가 더 중요하다.</li>
+<li>재현율과 정밀도는 모두 TP을 높이는 초점을 두 지만, 재현율은 FN을 낮추는데, 정밀도는 FP를 낮추는데 초점을 둔다.&lt;-서로 보완적인 지표로 분류의 성능을 평가하는데 적용됨.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#사이킷런은 정밀도 계산을 위해 precision_score()를, 재현율 계산을 위해 recall_score()를 API로 제공한다</span>
+<span class="c1">#오차행렬 구하는 confusion_matrix, 정확도 위한 accuracy, 정밀도 위한 precision, 재현율 위한 recall을 한번에 호출하는 함수 get_clf_eval()</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+
+<span class="k">def</span> <span class="nf">get_clf_eval</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">):</span>
+    <span class="n">confusion</span><span class="o">=</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="n">accuracy</span><span class="o">=</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="n">precision</span><span class="o">=</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="n">recall</span><span class="o">=</span><span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;오차행렬&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">confusion</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;정확도:</span><span class="si">{0:.4f}</span><span class="s1">, 정밀도:</span><span class="si">{1:.4f}</span><span class="s1">, 재현율:</span><span class="si">{2:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy</span><span class="p">,</span> <span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span> <span class="c1">###질문이 회귀는 연속적인 값을 예측하는건데 왜나옴? 분류 의사결정 트리가 나와야 하지 않음?</span>
+
+<span class="c1">#원본 데이터를 재로딩, 데이터 가공, 학습 데이터/테스트 데이터 분할</span>
+<span class="n">titanic_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./train.csv&#39;</span><span class="p">)</span>
+<span class="n">y_titanic_df</span><span class="o">=</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span>
+<span class="n">X_titanic_df</span><span class="o">=</span><span class="n">titanic_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">X_titanic_df</span><span class="o">=</span><span class="n">transform_features</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">)</span> 
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X_titanic_df</span><span class="p">,</span> <span class="n">y_titanic_df</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+
+<span class="n">lr_clf</span><span class="o">=</span><span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">lr_clf</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">)</span> <span class="c1">#최적화에 사용할 알고리즘이 solver이고 &#39;liblinear&#39;가 그 종류</span>
+<span class="n">lr_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">pred</span><span class="o">=</span><span class="n">lr_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">get_clf_eval</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>  
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>오차 행렬
+[[108  10]
+ [ 14  47]]
+정확도: 0.8659, 정밀도: 0.8246, 재현율: 0.7705
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#51221;&#48128;&#46020;/&#51116;&#54788;&#50984;-&#53944;&#47112;&#51060;&#46300;-&#50724;&#54532;">&#51221;&#48128;&#46020;/&#51116;&#54788;&#50984; &#53944;&#47112;&#51060;&#46300; &#50724;&#54532;<a class="anchor-link" href="#&#51221;&#48128;&#46020;/&#51116;&#54788;&#50984;-&#53944;&#47112;&#51060;&#46300;-&#50724;&#54532;"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>정밀도 또는 재현율이 특별히 강조돼야 할 경우 분류의 결정 임곗값을 조정해 정밀도 또는 재현율의 수치를 높일 수 있다. 둘은 상호 보완적인 평가 지표이기에 어느 한쪽을 강제로 높이면 다른 하나의 수치는 떨어지기 쉬움. 이를 정밀도/재현율의 트레이드오프라고 함.</li>
+<li>이진 분류 모델에서 특정 데이터가 0이 될 확률이 10%, 1이 될 확률이 90%로 예측됐다면 최종예측은 더 큰 확률을 가진 1로 예측함. 일반적으로 이진 분류엣는 이 임계값을 0.5, 50%로 정하고 이 기준 값보다 확률이 크녀 P아니면 N으로 결정함.</li>
+<li>임계값  <ul>
+<li>확률 결정의 기준이 됨</li>
+<li>분류 결정 임계값은 Psitive 예측값을 결정하는 확률의 기준이 됨</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#사이킷런을 개별 데이터별로 예측 확률을 반환하는 메서드인 predict_proba()를 제공함.</span>
+<span class="c1">#학습이 완료된 사이킷런 Classifier 객체에서 호출이 가능하며 테스트 피처 세트를 파라미터로 입력해주면</span>
+<span class="c1">#테스트 피처 레코드의 개별 클래스 예측 확률을 반환해줌.</span>
+<span class="c1">#차이점은 반환결과가 predict()-&gt;예측 결과 클래스 값, predict_proba()-&gt;예측 확률 결과</span>
+<span class="c1">#반환되는 ndarray는 첫 번째 칼럼이 클래스 값 0에 대한 예측확률, 두 번째 칼럼이 클래스 값 1에 대한 에측 확률임.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pred_proba</span><span class="o">=</span><span class="n">lr_clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pred_proba() 결과 Shape : </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pred_proba</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pred_proba array에서 앞 3개만 샘플로 추출 </span><span class="se">\n</span><span class="s1">:&#39;</span><span class="p">,</span><span class="n">pred_proba</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="c1">#예측 확률 array와 예측 결괏값 array를 병합(concatenate)해 예측 확률과 결괏값을 한눈에 확인</span>
+<span class="n">pred</span><span class="o">=</span><span class="n">lr_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">pred_proba_result</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">pred_proba</span><span class="p">,</span> <span class="n">pred</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#shape에서 음수도 같이 있을때는, 양수는 먼저 열 배열후 </span>
+                                                                           <span class="c1">#음수는 가변적으로 알어서 행 배열의미.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;두 개의 class 중에서 더 큰 확률을 클래스 값으로 예측 </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">pred_proba_result</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>   <span class="c1">###어디서 부터 잘못됬니,,,</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>pred_proba() 결과 Shape : (179, 2)
+pred_proba array에서 앞 3개만 샘플로 추출 
+: [[0.44935225 0.55064775]
+ [0.86335511 0.13664489]
+ [0.86429643 0.13570357]]
+두 개의 class 중에서 더 큰 확률을 클래스 값으로 예측 
+ [[0.44935225 0.55064775 1.        ]
+ [0.86335511 0.13664489 0.        ]
+ [0.86429643 0.13570357 0.        ]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#정해진 임계값을 만족하는 ndarry칼럼위치를 최종예측하는 클래스--&gt;Binarizer</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">Binarizer</span>
+
+<span class="n">X</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+   <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">]]</span>
+
+<span class="c1"># X의 개별 원소들이 분류결정 임계값인 threshold(1.1)값보다 같거나 작으면 0을, 크면 1을 반환.</span>
+<span class="n">binarizer</span><span class="o">=</span><span class="n">Binarizer</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="mf">1.1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">binarizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">Binarizer</span>
+
+<span class="c1">#Binarizer의 threshold 설정값 0.5가 분류 결정 임계값임.</span>
+<span class="n">custom_threshold</span><span class="o">=</span><span class="mf">0.5</span>
+
+<span class="c1">#predict_proba() 반환값의 두 번째 칼럼, 즉 Positive(1) 클래스 칼럼만 추출해 Binarizer를 적용</span>
+<span class="n">pred_proba_1</span><span class="o">=</span><span class="n">pred_proba</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">binarizer</span><span class="o">=</span><span class="n">Binarizer</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="n">custom_threshold</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pred_proba_1</span><span class="p">)</span>
+<span class="n">custom_predict</span><span class="o">=</span><span class="n">binarizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">pred_proba_1</span><span class="p">)</span>
+
+<span class="n">get_clf_eval</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">custom_predict</span><span class="p">)</span>  <span class="c1">###값 다름,,ㅠㅠ</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>오차 행렬
+[[108  10]
+ [ 14  47]]
+정확도: 0.8659, 정밀도: 0.8246, 재현율: 0.7705
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">custom_threshold</span><span class="o">=</span><span class="mf">0.4</span>
+<span class="n">pred_proba_1</span><span class="o">=</span><span class="n">pred_proba</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">binarizer</span><span class="o">=</span><span class="n">Binarizer</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="n">custom_threshold</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pred_proba_1</span><span class="p">)</span> <span class="c1">#임계값 0.4로 값이 1인 칼럼만 넣어서 예측해본거</span>
+<span class="n">custom_predict</span><span class="o">=</span><span class="n">binarizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">pred_proba_1</span><span class="p">)</span>
+
+<span class="n">get_clf_eval</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">custom_predict</span><span class="p">)</span>   <span class="c1">####&lt;-ㅜㅠㅠ</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>오차 행렬
+[[97 21]
+ [11 50]]
+정확도: 0.8212, 정밀도: 0.7042, 재현율: 0.8197
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>임계값을 낮추니까 재현율이 올라가고 정밀도가 떨어짐. 그 이유는 분류 결정 임계값은 Psitive 예측값을 결정하는 확률의 기준이 됨. 확률이 0.5가 아닌 0.4부터 Positve로 예측을 더 너그럽게 하기 때문. -&gt;임계값 낮출수록 P로 예측을 더 많이 하기에 True 값이 많아짐. Positive 예측값이 많아지면 상대적으로 재현율이 높아짐. 양성 예측을 많이 하다 보니 실제 양성을 음성으로 예측할 횟수가 줄어들기 때문. <ul>
+<li>즉, (분자-TP가 커지고 분모-TP커지고, 분모-FN가 작아짐)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#임계값을 0.4로 부터 0.6까지 0.05씩 증가시키며 평가 지표를 작설할건데 이를 위해 get_eval_by_threshold()를 써줌</span>
+
+<span class="c1">#테스트를 수행할 모든 임계값을 리스트 객체로 저장</span>
+<span class="n">thresholds</span><span class="o">=</span><span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">get_eval_by_threshold</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred_proba_c1</span><span class="p">,</span> <span class="n">thresholds</span><span class="p">):</span>
+    <span class="c1">#thresholds list객체 내의 값을 차례로 iteration하면서 Evaluation 수행.</span>
+    <span class="k">for</span> <span class="n">custom_threshold</span> <span class="ow">in</span> <span class="n">thresholds</span><span class="p">:</span>
+        <span class="n">binarizer</span><span class="o">=</span><span class="n">Binarizer</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="n">custom_threshold</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pred_proba_c1</span><span class="p">)</span>
+        <span class="n">custom_predict</span><span class="o">=</span><span class="n">binarizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">pred_proba_c1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;임계값:&#39;</span><span class="p">,</span><span class="n">custom_threshold</span><span class="p">)</span>
+        <span class="n">get_clf_eval</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">custom_predict</span><span class="p">)</span>
+        
+<span class="n">get_eval_by_threshold</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred_proba</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">thresholds</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>임계값: 0.4
+오차 행렬
+[[97 21]
+ [11 50]]
+정확도: 0.8212, 정밀도: 0.7042, 재현율: 0.8197
+임계값: 0.45
+오차 행렬
+[[105  13]
+ [ 13  48]]
+정확도: 0.8547, 정밀도: 0.7869, 재현율: 0.7869
+임계값: 0.5
+오차 행렬
+[[108  10]
+ [ 14  47]]
+정확도: 0.8659, 정밀도: 0.8246, 재현율: 0.7705
+임계값: 0.55
+오차 행렬
+[[111   7]
+ [ 16  45]]
+정확도: 0.8715, 정밀도: 0.8654, 재현율: 0.7377
+임계값: 0.6
+오차 행렬
+[[113   5]
+ [ 17  44]]
+정확도: 0.8771, 정밀도: 0.8980, 재현율: 0.7213
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">precision_recall_curve</span>
+
+<span class="c1">#레이블 값이 1일 때의 예측 확률을 추출</span>
+<span class="n">pred_proba_class1</span><span class="o">=</span><span class="n">lr_clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1">#열 두번째거 (이름:1) 빼온거</span>
+
+<span class="c1">#실제값 데이터 세트와 레이블 값이 1일때 예측 확률을 precision_recall_curve 인자로 입력</span>
+<span class="n">precisions</span><span class="p">,</span> <span class="n">recalls</span><span class="p">,</span> <span class="n">thresholds</span><span class="o">=</span><span class="n">precision_recall_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred_proba_class1</span><span class="p">)</span> <span class="c1">####&gt;???</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;반환된 분류 결정 임계값 배열의 Shape:&#39;</span><span class="p">,</span> <span class="n">thresholds</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1">#반환된 임계값 배열 로우가 147건이므로 샘플로 10건만 추출하되, 임계값을 15 step으로 추출</span>
+<span class="n">thr_index</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">thresholds</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">15</span><span class="p">)</span> <span class="c1"># 첫항이 0, 끝항이 thresholds.shape[0]=147, 간격이 15</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;샘플 추출을 위한 임계값 배열의 index 10개:&#39;</span><span class="p">,</span><span class="n">thr_index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;샘플용 10개의 임계값: &#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">thresholds</span><span class="p">[</span><span class="n">thr_index</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>
+
+<span class="c1">#15 step 단위로 추출된 임계값에 따른 정밀도와 재현율 값</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;샘플 임계값별 정밀도: &#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">precisions</span><span class="p">[</span><span class="n">thr_index</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;샘플 임계값별 재현율: &#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">recalls</span><span class="p">[</span><span class="n">thr_index</span><span class="p">],</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>반환된 분류 결정 임계값 배열의 Shape: (147,)
+샘플 추출을 위한 임계값 배열의 index 10개: [  0  15  30  45  60  75  90 105 120 135]
+샘플용 10개의 임계값:  [0.12 0.13 0.15 0.17 0.26 0.38 0.49 0.63 0.76 0.9 ]
+샘플 임계값별 정밀도:  [0.379 0.424 0.455 0.519 0.618 0.676 0.797 0.93  0.964 1.   ]
+샘플 임계값별 재현율:  [1.    0.967 0.902 0.902 0.902 0.82  0.77  0.656 0.443 0.213]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">precision_recall_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">pred_proba_class1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(array([0.37888199, 0.375     , 0.37735849, 0.37974684, 0.38216561,
+        0.37820513, 0.38064516, 0.38311688, 0.38562092, 0.38815789,
+        0.39072848, 0.39597315, 0.40136054, 0.41843972, 0.42142857,
+        0.42446043, 0.43065693, 0.43382353, 0.43703704, 0.44029851,
+        0.44360902, 0.4469697 , 0.44615385, 0.4496124 , 0.4453125 ,
+        0.44094488, 0.44444444, 0.44      , 0.44354839, 0.44715447,
+        0.45454545, 0.45833333, 0.46218487, 0.46610169, 0.47008547,
+        0.47413793, 0.47826087, 0.48245614, 0.48672566, 0.49107143,
+        0.4954955 , 0.5       , 0.50458716, 0.50925926, 0.51401869,
+        0.51886792, 0.52380952, 0.52884615, 0.53398058, 0.53921569,
+        0.54455446, 0.55      , 0.55555556, 0.56122449, 0.56701031,
+        0.57291667, 0.59139785, 0.59782609, 0.6043956 , 0.61111111,
+        0.61797753, 0.625     , 0.63218391, 0.63953488, 0.64705882,
+        0.64285714, 0.65060241, 0.65853659, 0.66666667, 0.675     ,
+        0.6835443 , 0.69230769, 0.68831169, 0.68421053, 0.68      ,
+        0.67567568, 0.68493151, 0.69444444, 0.70422535, 0.71428571,
+        0.71014493, 0.72058824, 0.73134328, 0.74242424, 0.75384615,
+        0.765625  , 0.76190476, 0.77419355, 0.78688525, 0.8       ,
+        0.79661017, 0.81034483, 0.8245614 , 0.83928571, 0.83636364,
+        0.83333333, 0.8490566 , 0.86538462, 0.8627451 , 0.88      ,
+        0.89795918, 0.89583333, 0.91489362, 0.93478261, 0.93181818,
+        0.93023256, 0.92857143, 0.95121951, 0.95      , 0.94871795,
+        0.94736842, 0.94594595, 0.94444444, 0.94285714, 0.94117647,
+        0.93939394, 0.9375    , 0.96774194, 0.96666667, 0.96551724,
+        0.96428571, 0.96296296, 0.96153846, 0.96      , 0.95833333,
+        0.95652174, 0.95454545, 0.95238095, 0.95      , 0.94736842,
+        0.94444444, 0.94117647, 0.9375    , 1.        , 1.        ,
+        1.        , 1.        , 1.        , 1.        , 1.        ,
+        1.        , 1.        , 1.        , 1.        , 1.        ,
+        1.        , 1.        , 1.        ]),
+ array([1.        , 0.98360656, 0.98360656, 0.98360656, 0.98360656,
+        0.96721311, 0.96721311, 0.96721311, 0.96721311, 0.96721311,
+        0.96721311, 0.96721311, 0.96721311, 0.96721311, 0.96721311,
+        0.96721311, 0.96721311, 0.96721311, 0.96721311, 0.96721311,
+        0.96721311, 0.96721311, 0.95081967, 0.95081967, 0.93442623,
+        0.91803279, 0.91803279, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.90163934, 0.90163934, 0.90163934, 0.90163934, 0.90163934,
+        0.8852459 , 0.8852459 , 0.8852459 , 0.8852459 , 0.8852459 ,
+        0.8852459 , 0.8852459 , 0.86885246, 0.85245902, 0.83606557,
+        0.81967213, 0.81967213, 0.81967213, 0.81967213, 0.81967213,
+        0.80327869, 0.80327869, 0.80327869, 0.80327869, 0.80327869,
+        0.80327869, 0.78688525, 0.78688525, 0.78688525, 0.78688525,
+        0.7704918 , 0.7704918 , 0.7704918 , 0.7704918 , 0.75409836,
+        0.73770492, 0.73770492, 0.73770492, 0.72131148, 0.72131148,
+        0.72131148, 0.70491803, 0.70491803, 0.70491803, 0.67213115,
+        0.6557377 , 0.63934426, 0.63934426, 0.62295082, 0.60655738,
+        0.59016393, 0.57377049, 0.55737705, 0.54098361, 0.52459016,
+        0.50819672, 0.49180328, 0.49180328, 0.47540984, 0.45901639,
+        0.44262295, 0.42622951, 0.40983607, 0.39344262, 0.37704918,
+        0.36065574, 0.3442623 , 0.32786885, 0.31147541, 0.29508197,
+        0.27868852, 0.26229508, 0.24590164, 0.24590164, 0.2295082 ,
+        0.21311475, 0.19672131, 0.18032787, 0.16393443, 0.14754098,
+        0.13114754, 0.1147541 , 0.09836066, 0.08196721, 0.06557377,
+        0.03278689, 0.01639344, 0.        ]),
+ array([0.11573102, 0.11636723, 0.11819213, 0.12102774, 0.1234948 ,
+        0.12350958, 0.12367553, 0.12730438, 0.12780981, 0.12838061,
+        0.12904511, 0.12928357, 0.12934056, 0.12941903, 0.13094562,
+        0.13174372, 0.13196918, 0.13221181, 0.13227898, 0.13536702,
+        0.13570357, 0.13571   , 0.1357405 , 0.13664489, 0.1375847 ,
+        0.13821237, 0.13866563, 0.14423595, 0.14523152, 0.14927303,
+        0.14927478, 0.14996978, 0.15025071, 0.15029262, 0.15031481,
+        0.15252582, 0.15276924, 0.15344754, 0.15652281, 0.15768776,
+        0.15805796, 0.15920997, 0.15981388, 0.16929076, 0.17053651,
+        0.17288744, 0.17656591, 0.1828031 , 0.20840196, 0.21127162,
+        0.21146794, 0.21264241, 0.21814872, 0.22356775, 0.22562756,
+        0.22996172, 0.23280098, 0.24315893, 0.24583256, 0.2538079 ,
+        0.25749268, 0.26467919, 0.26627951, 0.27002658, 0.283459  ,
+        0.28441583, 0.2880536 , 0.28879776, 0.29773307, 0.30202578,
+        0.31152613, 0.32202995, 0.32461308, 0.37288269, 0.37416478,
+        0.37571831, 0.38134888, 0.39802175, 0.40161934, 0.40194454,
+        0.41445142, 0.41803173, 0.42351943, 0.43653428, 0.43966456,
+        0.44222414, 0.44497249, 0.44673657, 0.45125913, 0.454472  ,
+        0.49209943, 0.49675952, 0.51355235, 0.51724753, 0.51807937,
+        0.52051719, 0.54412031, 0.55064775, 0.57135187, 0.59397426,
+        0.60096648, 0.61651659, 0.62057772, 0.62067109, 0.62629695,
+        0.62876413, 0.63856712, 0.64779433, 0.64818744, 0.65129871,
+        0.65202361, 0.65651101, 0.66092028, 0.66814002, 0.6711466 ,
+        0.68434287, 0.68584875, 0.72771397, 0.74146852, 0.74838702,
+        0.75924582, 0.7599495 , 0.76223722, 0.76738866, 0.7746788 ,
+        0.78006621, 0.79383978, 0.79696902, 0.83460266, 0.84990723,
+        0.86053885, 0.8636594 , 0.86565305, 0.87778554, 0.88858246,
+        0.89611668, 0.91026752, 0.91630374, 0.91699185, 0.92085513,
+        0.92233281, 0.92353131, 0.92638597, 0.92838719, 0.93261004,
+        0.94040085, 0.94326279]))</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/yosung/2022/05/08/%EA%B0%95%ED%9A%A8%EC%8A%B9.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/yosung/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/yosung/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/yosung/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/yoseung" target="_blank" title="yoseung"><svg class="svg-icon grey"><use xlink:href="/yosung/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
